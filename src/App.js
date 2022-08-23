@@ -1,13 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
+  const handleHighlight = () => {
+    let range = window.getSelection().getRangeAt(0);
+    let newNode = document.createElement("mark");
+    range.surroundContents(newNode);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <div className="App-header">
+        <p onMouseUp={() => handleHighlight()}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+          nostrum, dolores animi iusto eligendi, quos reiciendis dolore
+          consequatur, laudantium deserunt qui voluptatibus modi! Repellat
+          cupiditate distinctio laborum blanditiis quisquam ipsum incidunt!
+          Explicabo totam voluptatem ab et! Nostrum voluptas veritatis quae
+          facere dicta corrupti aliquid odit ratione libero earum. Ratione, non?
         </p>
         <a
           className="App-link"
@@ -15,9 +23,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Author: Rachel Chen
         </a>
-      </header>
+      </div>
     </div>
   );
 }
