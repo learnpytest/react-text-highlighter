@@ -177,6 +177,7 @@ function Highlight() {
       const cloneArea = [...area]
       cloneArea.splice(targetIndex, 2)
       setArea(cloneArea)
+      setComputedRange(cloneArea)
     },
     setStartTagOfHighlight: (e) => {
       startTag.current = e.target
