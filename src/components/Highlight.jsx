@@ -171,6 +171,13 @@ function Highlight() {
       setArea([])
       setComputedRange([])
     },
+    removeHighlight:(e) => {
+      const dataId = Number(e.target.getAttribute("dataid"))
+      const targetIndex = area.findIndex(num => num === dataId)
+      const cloneArea = [...area]
+      cloneArea.splice(targetIndex, 2)
+      setArea(cloneArea)
+    },
     setStartTagOfHighlight: (e) => {
       startTag.current = e.target
     },
@@ -186,7 +193,8 @@ function Highlight() {
     // Compute State
     handleHighlight: (e) => {
       let highlightRange = methods.getHighlightRange(e) // input:e, output: [5,11]
-      if (highlightRange.length !== 2) return
+
+      if (highlightRange?.length !== 2) return
       {
         let computedHighlightRange
         if (area.length < 2) {
@@ -209,7 +217,7 @@ function Highlight() {
     <div className="App-default" >
       <div>
         <h2>Select and highlight text</h2>
-          <p className="paragraph" onMouseDown={(e) => methods.setStartTagOfHighlight(e)} onMouseUp={(e) => methods.handleHighlight(e)} >
+        <p className="paragraph" onMouseDown={(e) => methods.setStartTagOfHighlight(e)} onMouseUp={(e) => methods.handleHighlight(e)} onClick={(e) => methods.removeHighlight(e)}>
             {methods.renderComponent}
           </p>
       </div>
