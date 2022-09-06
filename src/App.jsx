@@ -25,7 +25,8 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >Blog
-                </a>
+                </a> • <a className="App-link App-link-light" href="https://github.com/learnpytest/react-text-highlighter" target="_blank"
+                  rel="noopener noreferrer">GitHub</a>
               </span>
             </div>
             
