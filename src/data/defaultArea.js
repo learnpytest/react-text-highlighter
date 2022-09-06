@@ -1,2 +1,2 @@
-const defaultArea = [4, 6, 10, 10]
+const defaultArea = [5, 6, 12, 46]
 export default defaultArea

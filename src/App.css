@@ -14,11 +14,17 @@
   background-color: #d7c4bb;
   text-align: center;
   font-size: calc(10px + 2vmin);
-  color: #333333;
 }
 
 .App-header {
   margin-bottom: 1rem;
+}
+
+.App-title {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 .App-footer {

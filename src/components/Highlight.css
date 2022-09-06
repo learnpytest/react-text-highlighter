@@ -6,7 +6,7 @@ h2 {
 
 .paragraph {
   margin-bottom: 2em;
-  background-color:#d7c4bb;
+  color: #333333;
 }
 
 .button-list {
@@ -20,7 +20,7 @@ button {
   padding: 8px 16px;
   border: none;
   border-radius: 4px;
-  background-color: #5b622e;
+  background-color: #1F2310;
   color: #eee;
   font-size: inherit;
   cursor: pointer;
@@ -34,7 +34,8 @@ button:hover {
 .highlight-text {
   cursor: pointer;
   position: relative;
-  background-color: #d63384;
+  background-color: #d86f7c;
+  /* 80D0C7 */
 }
 
 .highlight-text:hover::after {

@@ -7,7 +7,7 @@ function App() {
       <div className="App-default App-content">
         <header className="header App-header">
           <div className="App-container">
-            <h1>React Text Highlighter</h1>
+            <h1 className="App-title">React Text Highlighter</h1>
           </div>
         </header>
         <main className="App-main">
