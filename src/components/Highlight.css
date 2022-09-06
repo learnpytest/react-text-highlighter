@@ -1,0 +1,48 @@
+h2 {
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.paragraph {
+  margin-bottom: 2em;
+  background-color:#d7c4bb;
+}
+
+.button-list {
+  margin-bottom: 1em;
+  order: -1;
+}
+
+button {
+  display: block;
+  margin-bottom: 1em;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5b622e;
+  color: #eee;
+  font-size: inherit;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+button:hover {
+  background-color: #474d24;
+}
+
+.highlight-text {
+  cursor: pointer;
+  position: relative;
+  background-color: #d63384;
+}
+
+.highlight-text:hover::after {
+  content: "remove";
+  display: inline-block;
+  font-size: 5px;
+  background-color: #aaa;
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
