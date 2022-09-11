@@ -1,7 +1,7 @@
 import "./Highlight.css";
 import defaultArea from "../data/defaultArea"
 import React, { useState, useRef, useEffect, useMemo } from "react"
-let article = `聽到一項「謠言」的時候，即使是很奇怪，非常可疑的消息，只要覺得很有趣，就一鼓作氣，將之傳播開來，我對於這種人，就算是名人，也會冷眼對待。 ---《為什麼孩子要上學》`
+let article = `每個人在小時候或是人生各種階段裡，都會將幾個偶像視為成長目標，刻骨在心中。檢討自己每日的生活，就會瞭解到不論是誰，想要完全變成某一個人，是不可能完全成功的。如果繼續努力朝著「像那個人一樣」的方向前進，多多少少可以接近他那般的境界」。......聽到一項「謠言」的時候，即使是很奇怪，非常可疑的消息，只要覺得很有趣，就一鼓作氣，將之傳播開來，我對於這種人，就算是名人，也會冷眼對待。 ---《為什麼孩子要上學》`
 
 function Highlight() {
   // State
